@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catatan Hari Minggu Rizky</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: #111827;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fcd34d;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 1rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #fcd34d;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      background: #f59e0b;
+      color: #111827;
+    }
+
+    /* BANNER */
+    .banner {
+      background: linear-gradient(to right, #111827, #f59e0b);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 0.5rem;
+      margin: 1.5rem auto;
+      max-width: 1200px;
+    }
+    .banner h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #fcd34d;
+    }
+
+    /* CONTENT CARD */
+    .content-card {
+      background: #fff;
+      max-width: 1200px;
+      margin: 1.5rem auto;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+
+    /* TABEL JADWAL */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background: #111827;
+      color: #fcd34d;
+    }
+    table tr:nth-child(even) {
+      background: #f9fafb;
+    }
+    table tr:hover {
+      background: #e2e8f0;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 0.5rem;
+      height: 200px;
+      object-fit: cover;
+    }
+    figcaption {
+      margin-top: 0.3rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
+
+    /* VIDEO */
+    .video-container video {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    /* AUDIO */
+    .audio-container {
+      background: #f9fafb;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .audio-icon {
+      width: 50px;
+      height: 50px;
+      background: #111827;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fcd34d;
+      font-size: 1.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111827;
+      color: #eee;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #fcd34d;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Catatan Hari Minggu Rizky</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#jadwal">Kegiatan</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#audio">Musik</a></li>
+        <li><a href="#about">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BANNER -->
+    <section id="home" class="banner">
+      <h1>Catatan Jadwal Hari Minggu Rizky Zehans</h1>
+      <p>Catatan sederhana tentang rutinitas Minggu saya.</p>
+    </section>
+
+    <!-- JADWAL -->
+    <section id="jadwal" class="content-card">
+      <h2>📅 Jadwal Hari Libur (Minggu)</h2>
+      <table>
+        <tr>
+          <th>Waktu</th>
+          <th>Kegiatan</th>
+        </tr>
+        <tr><td>06.00 – 07.00</td><td>Bangun pagi, olahraga ringan (jogging)</td></tr>
+        <tr><td>07.00 – 08.00</td><td>Sarapan santai bersama keluarga</td></tr>
+        <tr><td>08.00 – 10.00</td><td>Membersihkan rumah / kamar</td></tr>
+        <tr><td>10.00 – 12.00</td><td>Aktivitas hobi (membaca, menulis, main game, membantu pekerjaan ortu, dll.)</td></tr>
+        <tr><td>12.00 – 13.00</td><td>Makan siang & istirahat sebentar</td></tr>
+        <tr><td>13.00 – 15.00</td><td>Nonton film / serial atau jalan-jalan</td></tr>
+        <tr><td>15.00 – 16.00</td><td>Ngopi sore, santai di rumah</td></tr>
+        <tr><td>16.00 – 17.30</td><td>Olahraga ringan sore (bersepeda / jalan santai)</td></tr>
+        <tr><td>17.30 – 18.30</td><td>Bersih diri, ibadah, dan makan malam</td></tr>
+        <tr><td>18.30 – 20.00</td><td>Quality time (main bareng keluarga / ngobrol santai)</td></tr>
+        <tr><td>20.00 – 21.00</td><td>Persiapan untuk minggu depan (cek jadwal, rapiin barang)</td></tr>
+        <tr><td>21.00 – 22.00</td><td>Waktu bebas / hobi ringan (baca buku, denger musik)</td></tr>
+        <tr><td>22.00 – seterusnya</td><td>Istirahat / tidur</td></tr>
+      </table>
+    </section>
+
+<!-- GALLERY -->
+<section id="gallery" class="content-card">
+  <h2>Foto Random Bareng Kucing Oren</h2>
+  <div class="gallery">
+    <figure>
+      <img src="gambar1.jpg" alt="Foto 1">
+      <figcaption>Gambar 1</figcaption>
+    </figure>
+    <figure>
+      <img src="gambar2.jpg" alt="Foto 2">
+      <figcaption>Gambar 2</figcaption>
+    </figure>
+    <figure>
+      <img src="gambar3.jpg" alt="Foto 3">
+      <figcaption>Gambar 3</figcaption>
+    </figure>
+  </div>
+
+  <!-- Video di bawah -->
+  <div class="video-container" style="margin-top:1.5rem;">
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+      Browser tidak mendukung video.
+    </video>
+    <p style="text-align:center; margin-top:0.5rem;">Video Gabut</p>
+  </div>
+</section>
+
+<!-- AUDIO -->
+<section id="audio" class="content-card">
+  <h2>Musik Favorit</h2>
+  <div class="audio-container">
+    <div class="audio-icon">🎶</div>
+    <div>
+      <h3>Blue Yung Kai</h3>
+      <p>Durasi: 2:03 menit.</p>
+    </div>
+    <audio controls>
+      <source src="blue yung kai.mp3" type="audio/mpeg">
+      Browser tidak mendukung audio.
+    </audio>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="content-card">
+  <h2>Tentang Saya</h2>
+  <p>Halo, saya Rizky Zehans. Ini adalah catatan hari minggu saya yang berisi aktivitas, jadwal, galeri, dan musik favorit.</p>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Catatan Hari Minggu Rizky.</p>
+    <p>
+      <a href="https://wa.me/6282130228670" target="_blank">WhatsApp</a> | 
+      <a href="https://www.tiktok.com/@zhns_2011" target="_blank">TikTok</a> | 
+      <a href="https://www.youtube.com/channel/UC0PTWusx1favabnsbeGwzIQ" target="_blank">YouTube</a>
+    </p>
+  </footer>
+</body>
+</html>
